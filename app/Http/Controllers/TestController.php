@@ -13,7 +13,8 @@ class TestController extends Controller
 {
     public function index()
     {
-
+        $query = DB::select('select * from fdb_test;');
+        return $query;
     }
 
     public function select()
